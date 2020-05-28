@@ -10,6 +10,7 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Switch;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -31,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
+        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
     }
     @Override
     public void onBackPressed() {
@@ -44,14 +46,17 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
-            case R.id.wv_h:
+            case R.id.home:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
+                drawer.closeDrawers();
                 break;
-            case R.id.wv_d:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
+            case R.id.dept:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new DeptFragment()).commit();
+                drawer.closeDrawers();
                 break;
-            case R.id.wv_b:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
+            case R.id.blog:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new BlogFragment()).commit();
+                drawer.closeDrawers();
                 break;
         }
         return true;
