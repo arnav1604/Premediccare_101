@@ -9,8 +9,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.Switch;
-import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 
@@ -51,11 +49,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 drawer.closeDrawers();
                 break;
             case R.id.dept:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new DeptFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Diabetes()).commit();
                 drawer.closeDrawers();
                 break;
             case R.id.blog:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new BlogFragment()).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HeartDisease()).commit();
                 drawer.closeDrawers();
                 break;
         }

@@ -1,22 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-<!--    xmlns:tools="http://schemas.android.com/tools"-->
-<!--    tools:showIn="navigation_view"-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
 
 
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/home"
             android:icon="@drawable/ic_home"
-            android:title="Home" />
+            android:title="@string/home" />
         <item
             android:id="@+id/dept"
             android:icon="@drawable/ic_departments"
-            android:title="Departments" />
+            android:title="@string/departments" />
         <item
             android:id="@+id/blog"
             android:icon="@drawable/ic_blog"
-            android:title="Blog" />
+            android:title="@string/blog" />
+        <item
+            android:id="@+id/breastcancer"
+            android:title="@string/breast_cancer"/>
+        <item
+            android:id="@+id/liverdsese"
+            android:title="@string/liver_disease"/>
+        <item
+            android:id="@+id/chronickidney"
+            android:title="@string/chronic_kidney"/>
+        <item
+            android:id="@+id/malaria"
+            android:title="@string/malaria"/>
+        <item
+            android:id="@+id/pneumonia"
+            android:title="@string/pneumonia"/>
+        <item
+            android:id="diabeticrenopathy"
+            android:title="@string/diabetic_reinopathy"/>
     </group>
 
 
