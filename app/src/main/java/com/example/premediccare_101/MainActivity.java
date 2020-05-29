@@ -12,6 +12,9 @@ import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
+import static com.example.premediccare_101.R.id.drawer_layout;
+import static com.example.premediccare_101.R.id.toolbar;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
     @Override
@@ -22,9 +25,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar=findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        //DrawerLayout drawer;
         drawer = findViewById(R.id.drawer_layout);
-
-        NavigationView navigationView=findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar,
                 R.string.navigation_drawer_open, R.string.navigation_drawer_close);
