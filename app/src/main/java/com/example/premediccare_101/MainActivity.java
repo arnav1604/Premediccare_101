@@ -63,7 +63,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new BreastCancer()).commit();
                 drawer.closeDrawers();
                 break;
-            case R.id.liverdsese:
+            case R.id.liver:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new LiverDisease()).commit();
                 drawer.closeDrawers();
                 break;

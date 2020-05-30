@@ -21,7 +21,7 @@
             android:id="@+id/breastcancer"
             android:title="@string/breast_cancer"/>
         <item
-            android:id="@+id/liverdsese"
+            android:id="@+id/liverdesease"
             android:title="@string/liver_disease"/>
         <item
             android:id="@+id/chronickidney"
