@@ -3,8 +3,8 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="home">Home</string>
-    <string name="departments">Departments</string>
-    <string name="blog">Blog</string>
+    <string name="departments">Diabetes</string>
+    <string name="blog">Heart</string>
     <string name="breast_cancer">Breast Cancer</string>
     <string name="liver_disease">Liver Disease</string>
     <string name="chronic_kidney">Chronic Kidney</string>
