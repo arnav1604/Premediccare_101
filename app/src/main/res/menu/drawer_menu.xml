@@ -10,11 +10,11 @@
             android:icon="@drawable/ic_home"
             android:title="@string/home" />
         <item
-            android:id="@+id/dept"
+            android:id="@+id/diabetes"
             android:icon="@drawable/ic_departments"
             android:title="@string/departments" />
         <item
-            android:id="@+id/blog"
+            android:id="@+id/heart"
             android:icon="@drawable/ic_blog"
             android:title="@string/blog" />
         <item
@@ -33,7 +33,7 @@
             android:id="@+id/pneumonia"
             android:title="@string/pneumonia"/>
         <item
-            android:id="@+id/diabeticrenopathy"
+            android:id="@+id/reinopathy"
             android:title="@string/diabetic_reinopathy"/>
     </group>
 

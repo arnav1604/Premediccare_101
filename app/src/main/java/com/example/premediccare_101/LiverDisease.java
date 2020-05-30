@@ -16,7 +16,7 @@ public class LiverDisease extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view= inflater.inflate(R.layout.activity_liver,container,false);
-        WebView webView = view.findViewById(R.id.wv_h);
+        WebView webView = view.findViewById(R.id.liver);
         WebSettings webSettings=webView.getSettings();//initialising web view object
         webSettings.setJavaScriptEnabled(true);
         webView.loadUrl("https://liverdisease-predictor.herokuapp.com/");
