@@ -17,7 +17,7 @@ public class Diabetes extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        WebView webView = view.findViewById(R.id.wv_h);
+        WebView webView = view.findViewById(R.id.diabates);
         webView.loadUrl("https://www.google.com");
         return view;
     }

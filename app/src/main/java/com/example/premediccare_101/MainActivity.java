@@ -48,14 +48,39 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
                 drawer.closeDrawers();
                 break;
-            case R.id.dept:
+            case R.id.diabetes:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Diabetes()).commit();
                 drawer.closeDrawers();
                 break;
-            case R.id.blog:
+            case R.id.heart:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HeartDisease()).commit();
                 drawer.closeDrawers();
                 break;
+            case R.id.breastcancer:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new BreastCancer()).commit();
+                drawer.closeDrawers();
+                break;
+            case R.id.liverdsese:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new LiverDisease()).commit();
+                drawer.closeDrawers();
+                break;
+            case R.id.malaria:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Malaria()).commit();
+                drawer.closeDrawers();
+                break;
+            case R.id.pneumonia:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Pnemonia()).commit();
+                drawer.closeDrawers();
+                break;
+            case R.id.reinopathy:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Reinopathy()).commit();
+                drawer.closeDrawers();
+                break;
+            case R.id.chronickidney:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ChronicKidney()).commit();
+                drawer.closeDrawers();
+                break;
+
         }
         return true;
     }
