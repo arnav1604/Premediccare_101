@@ -18,6 +18,8 @@ public class Pnemonia extends Fragment {
         View view= inflater.inflate(R.layout.activity_pnemonia,container,false);
         WebView webView = view.findViewById(R.id.nimonia);
         WebSettings webSettings=webView.getSettings();//initialising web view object
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setDisplayZoomControls(false);
         webSettings.setJavaScriptEnabled(true);
         webView.loadUrl("https://pneumoniapred.herokuapp.com/");
         return view;

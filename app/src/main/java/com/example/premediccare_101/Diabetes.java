@@ -17,7 +17,9 @@ public class Diabetes extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_diabetes, container, false);
         WebView webView = view.findViewById(R.id.diabates);
-        webView.loadUrl("https://www.google.com");
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setDisplayZoomControls(false);
+        webView.loadUrl(":https://diabetes125.herokuapp.com/");
         return view;
     }
 }

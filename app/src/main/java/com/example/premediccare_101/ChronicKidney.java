@@ -18,6 +18,8 @@ public class ChronicKidney extends Fragment {
         View view= inflater.inflate(R.layout.activity_chronic_kidney,container,false);
         WebView webView = view.findViewById(R.id.chronickdnay);
         WebSettings webSettings=webView.getSettings();//initialising web view object
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setDisplayZoomControls(false);
         webSettings.setJavaScriptEnabled(true);
         webView.loadUrl("https://chronickidneypred.herokuapp.com/");
         return view;

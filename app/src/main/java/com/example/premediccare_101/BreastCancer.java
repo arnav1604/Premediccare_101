@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,8 +19,11 @@ public class BreastCancer extends Fragment {
         View view= inflater.inflate(R.layout.activity_breastcancer,container,false);
         WebView webView = view.findViewById(R.id.cancerbreast);
         WebSettings webSettings=webView.getSettings();//initialising web view object
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setDisplayZoomControls(false);
         webSettings.setJavaScriptEnabled(true);
         webView.loadUrl("https://breastcancerpred.herokuapp.com/");
+        webView.setWebViewClient(new WebViewClient());
         return view;
     }
 }

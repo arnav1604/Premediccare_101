@@ -18,6 +18,8 @@ public class HeartDisease extends Fragment {
         View view = inflater.inflate(R.layout.activity_heart_disease, container, false);
         WebView webView = view.findViewById(R.id.heart_disease);
         WebSettings webSettings=webView.getSettings();//initialising web view object
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setDisplayZoomControls(false);
         webSettings.setJavaScriptEnabled(true);
         webView.loadUrl("https://heartdiseases.herokuapp.com/");
         return view;

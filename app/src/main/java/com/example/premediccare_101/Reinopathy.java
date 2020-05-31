@@ -19,6 +19,9 @@ public class Reinopathy extends Fragment {
         WebView webView = view.findViewById(R.id.reinopthy);
         WebSettings webSettings=webView.getSettings();//initialising web view object
         webSettings.setJavaScriptEnabled(true);
-        webView.loadUrl("https://diabeticreinopathy.herokuapp.com/");
-        return view;}
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setDisplayZoomControls(false);
+        webView.loadUrl("https://diabeticreinopathy2.herokuapp.com/");
+        return view;
+    }
 }

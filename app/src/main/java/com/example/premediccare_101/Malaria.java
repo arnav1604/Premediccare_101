@@ -18,6 +18,8 @@ public class Malaria extends Fragment {
         View view= inflater.inflate(R.layout.activity_malaria,container,false);
         WebView webView = view.findViewById(R.id.malria);
         WebSettings webSettings=webView.getSettings();//initialising web view object
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setDisplayZoomControls(false);
         webSettings.setJavaScriptEnabled(true);
         webView.loadUrl(":https://malariaprediction2.herokuapp.com/");
         return view;}
