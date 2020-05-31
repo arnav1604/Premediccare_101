@@ -83,7 +83,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ChronicKidney()).commit();
                 drawer.closeDrawers();
                 break;
-
+            case R.id.header:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
         }
         return true;
     }
