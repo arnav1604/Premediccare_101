@@ -85,6 +85,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.header:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
+                drawer.closeDrawers();
+                break;
         }
         return true;
     }

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Premediccare</string>
+    <string name="app_name">Premedic Care</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="home">Home</string>
@@ -12,5 +12,4 @@
     <string name="pneumonia">Pneumonia</string>
     <string name="diabetic_reinopathy">Diabetic Reinopathy</string>
     <string name="splash_logo">Logo of the app</string>
-    <string name="premedic_care">Premedic Care</string>
 </resources>
