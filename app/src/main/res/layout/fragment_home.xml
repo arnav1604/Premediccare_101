@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="@drawable/medic_light"
+    android:background="@drawable/background"
 
     android:layout_height="match_parent">
 
@@ -14,12 +14,22 @@
 <!--        tools:layout_editor_absoluteX="1dp"-->
 <!--        tools:layout_editor_absoluteY="1dp" />-->
     <Button
+        android:id="@+id/b_dept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/"
+        android:text="Home" />
+
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="50dp"
         android:layout_marginTop="200dp"
         android:background="@drawable/ic_home"
         android:text="Home" />
+
 
 
 </RelativeLayout>

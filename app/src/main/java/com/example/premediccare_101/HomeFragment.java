@@ -31,6 +31,8 @@ public class HomeFragment extends Fragment {
         webView.loadUrl("http://www.premediccare.rf.gd/");//specifying url of the site to be displayed
 
         webView.setWebViewClient(new WebViewClient());*/
+
+
         return view;
     }
 }

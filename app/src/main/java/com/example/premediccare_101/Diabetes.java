@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebSettings;
 import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
@@ -17,7 +18,11 @@ public class Diabetes extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_diabetes, container, false);
         WebView webView = view.findViewById(R.id.diabates);
-        webView.loadUrl("https://www.google.com");
+        WebSettings webSettings=webView.getSettings();//initialising web view object
+        webView.getSettings().setBuiltInZoomControls(true);
+        webView.getSettings().setDisplayZoomControls(false);
+        webSettings.setJavaScriptEnabled(true);
+        webView.loadUrl("https://diabetes125.herokuapp.com/");
         return view;
     }
 }
