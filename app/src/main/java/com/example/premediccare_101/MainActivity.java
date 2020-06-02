@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
                 drawer.closeDrawers();
                 break;
+
             case R.id.diabetes:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new Diabetes()).commit();
                 drawer.closeDrawers();
@@ -63,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new BreastCancer()).commit();
                 drawer.closeDrawers();
                 break;
-            case R.id.liver:
+            case R.id.liverdesease:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new LiverDisease()).commit();
                 drawer.closeDrawers();
                 break;
@@ -81,10 +82,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 break;
             case R.id.chronickidney:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new ChronicKidney()).commit();
-                drawer.closeDrawers();
-                break;
-            case R.id.header:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,new HomeFragment()).commit();
                 drawer.closeDrawers();
                 break;
         }

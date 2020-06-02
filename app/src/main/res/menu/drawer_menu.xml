@@ -7,19 +7,17 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/home"
-            android:icon="@drawable/ic_home"
             android:title="@string/home" />
         <item
             android:id="@+id/diabetes"
-            android:icon="@drawable/ic_departments"
-            android:title="@string/departments" />
+            android:title="@string/diabetes" />
         <item
             android:id="@+id/heart"
-            android:icon="@drawable/ic_blog"
-            android:title="@string/blog" />
+            android:title="@string/heart" />
         <item
             android:id="@+id/breastcancer"
             android:title="@string/breast_cancer"/>
+
         <item
             android:id="@+id/liverdesease"
             android:title="@string/liver_disease"/>

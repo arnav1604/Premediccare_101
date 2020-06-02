@@ -3,8 +3,8 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="home">Home</string>
-    <string name="departments">Diabetes</string>
-    <string name="blog">Heart</string>
+    <string name="diabetes">Diabetes</string>
+    <string name="heart">Heart</string>
     <string name="breast_cancer">Breast Cancer</string>
     <string name="liver_disease">Liver Disease</string>
     <string name="chronic_kidney">Chronic Kidney</string>
@@ -12,4 +12,9 @@
     <string name="pneumonia">Pneumonia</string>
     <string name="diabetic_reinopathy">Diabetic Reinopathy</string>
     <string name="splash_logo">Logo of the app</string>
+    <string name="department">Departments</string>
+    <string name="blog">Blog</string>
+    <string name="doctors">Doctors</string>
+    <string name="about">About Us</string>
+    <string name="contact">Contact Us</string>
 </resources>

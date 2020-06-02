@@ -13,6 +13,7 @@
         android:layout_width="95dp"
         android:layout_height="93dp"
         android:src="@drawable/medic"
+
         android:contentDescription="@string/app_name"/>
 
     <TextView

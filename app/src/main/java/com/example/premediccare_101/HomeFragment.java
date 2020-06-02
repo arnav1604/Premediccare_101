@@ -1,38 +1,75 @@
 package com.example.premediccare_101;
 
-import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.webkit.WebSettings;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
-
+import android.widget.Button;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 public class HomeFragment extends Fragment {
+    Button b1, b2, b3, b4, b5;
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View v = inflater.inflate(R.layout.fragment_home, container, false);
+        b1 = v.findViewById(R.id.b_dept);
+        b1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String s = "http://premediccare.rf.gd/departments-user.php";
+                Uri u = Uri.parse("http://" + s);
+                Intent i = new Intent(Intent.ACTION_VIEW, u);
+                startActivity(i);
+            }
+        });
 
-       // WebView webView = view.findViewById(R.id.wv_h);
-
-        //WebView mwebview = findViewById(R.id.webview);//linking web view to my java file of the activity
-
-        /*WebSettings webSettings=webView.getSettings();//initialising web view object
-
-        webSettings.setJavaScriptEnabled(true);//enabling site to be displayed in the app. The site needs to be built using javascript for this to happen
-
-        webView.loadUrl("http://www.premediccare.rf.gd/");//specifying url of the site to be displayed
-
-        webView.setWebViewClient(new WebViewClient());*/
-
-
-        return view;
+        b2 = v.findViewById(R.id.b_doc);
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String s = "http://premediccare.rf.gd/doctors-user.php";
+                Uri u = Uri.parse("http://" + s);
+                Intent i = new Intent(Intent.ACTION_VIEW, u);
+                startActivity(i);
+            }
+        });
+        b3 = v.findViewById(R.id.b_blog);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String s = "http://premediccare.rf.gd/blog-user.php";
+                Uri u = Uri.parse("http://" + s);
+                Intent i = new Intent(Intent.ACTION_VIEW, u);
+                startActivity(i);
+            }
+        });
+        b4 = v.findViewById(R.id.b_about);
+        b4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String s = "http://premediccare.rf.gd/about-user.php";
+                Uri u = Uri.parse("http://" + s);
+                Intent i = new Intent(Intent.ACTION_VIEW, u);
+                startActivity(i);
+            }
+        });
+        b5 = v.findViewById(R.id.b_cont);
+        b5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String s = "http://premediccare.rf.gd/doctors-user.php";
+                Uri u = Uri.parse("http://" + s);
+                Intent i = new Intent(Intent.ACTION_VIEW, u);
+                startActivity(i);
+            }
+        });
+        return v;
     }
+
 }

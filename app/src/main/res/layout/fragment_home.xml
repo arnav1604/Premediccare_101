@@ -1,35 +1,133 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="@drawable/background"
-
-    android:layout_height="match_parent">
-
-<!--    <WebView-->
-<!--        android:id="@+id/wv_h"-->
-<!--        android:layout_width="fill_parent"-->
-<!--        android:layout_height="fill_parent"-->
-<!--        tools:layout_editor_absoluteX="1dp"-->
-<!--        tools:layout_editor_absoluteY="1dp" />-->
-    <Button
-        android:id="@+id/b_dept"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/"
-        android:text="Home" />
+        android:orientation="vertical"
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="200dp"
-        android:background="@drawable/ic_home"
-        android:text="Home" />
+        android:background="@drawable/bg"
+        tools:context=".HomeFragment">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:src="@drawable/splashlogo"
+            android:foregroundGravity="center"
+            android:layout_marginStart="32dp"
+            android:padding="5dp"
+            android:contentDescription="@string/app_name"/>
+        <Button
+            android:id="@+id/b_dept"
+            android:layout_width="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/department"
+            android:background="@drawable/ic_departments" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/department"
+            android:textStyle="bold"
+            android:includeFontPadding="true"
+            android:padding="4dp"
+            android:layout_below="@id/b_dept"
+            android:fontFamily="monospace"
+            android:id="@+id/tv_d"/>
+
+        <Button
+            android:id="@+id/b_doc"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="71dp"
+            android:layout_marginTop="100dp"
+            android:layout_toEndOf="@id/b_dept"
+            android:background="@drawable/doc" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_d"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/doctors"
+            android:textStyle="bold"
+            android:layout_below="@id/b_doc"
+            android:includeFontPadding="true"
+            android:padding="4dp"
+            android:fontFamily="monospace"/>
+
+        <Button
+            android:id="@+id/b_blog"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/b_dept"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:background="@drawable/ic_blog" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/b_blog"
+            android:layout_marginStart="65dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/blog"
+            android:textStyle="bold"
+            android:includeFontPadding="true"
+            android:padding="4dp"
+            android:fontFamily="monospace"/>
 
 
+        <Button
+            android:id="@+id/b_about"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/b_doc"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="60dp"
+            android:layout_toEndOf="@id/b_blog"
+            android:background="@drawable/ic_about" />
 
-</RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_d"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/about"
+            android:textStyle="bold"
+            android:layout_below="@id/b_about"
+            android:includeFontPadding="true"
+            android:padding="4dp"
+            android:fontFamily="monospace"/>
+        <Button
+            android:id="@+id/b_cont"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/b_blog"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="140dp"
+            android:background="@drawable/ic_contact_support_" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_d"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="0dp"
+            android:text="@string/contact"
+            android:textStyle="bold"
+            android:layout_below="@id/b_cont"
+            android:includeFontPadding="true"
+            android:padding="4dp"
+            android:fontFamily="monospace"/>
+    </RelativeLayout> </ScrollView>
