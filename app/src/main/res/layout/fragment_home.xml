@@ -51,7 +51,7 @@
             android:layout_marginStart="71dp"
             android:layout_marginTop="100dp"
             android:layout_toEndOf="@id/b_dept"
-            android:background="@drawable/doc" />
+            android:background="@drawable/ic_doctor" />
 
         <TextView
             android:layout_width="wrap_content"
