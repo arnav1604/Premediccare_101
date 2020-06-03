@@ -1,86 +1,71 @@
 package com.example.premediccare_101;
 
 import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
 import android.widget.Button;
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 
-public class HomeFragment extends Fragment {
-    Button b1, b2, b3, b4, b5;
-WebView
+import java.util.Objects;
+
+public class HomeFragment extends DialogFragment {
+    Button bdepartment, bblog, bdoctor, baboutus, bcontact;
+WebView department,blog,doctor,aboutus;
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_home, container, false);
-        b1 = v.findViewById(R.id.b_dept);
-        b1.setOnClickListener(new View.OnClickListener() {
+        bdepartment = v.findViewById(R.id.b_dept);
+        bdepartment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String s = "http://premediccare.rf.gd/departments-user.php";
-                Uri u = Uri.parse("http://" + s);
-                Intent i = new Intent(Intent.ACTION_VIEW, u);
-                startActivity(i);
+                Intent depart = new Intent(getActivity(),Departments.class);
+                startActivity(depart);
+                requireActivity().overridePendingTransition(0,0);
             }
         });
 
-        b2 = v.findViewById(R.id.b_doc);
-        b2.setOnClickListener(new View.OnClickListener() {
+        bdoctor = v.findViewById(R.id.b_doc);
+        bdoctor.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String s = "http://premediccare.rf.gd/doctors-user.php";
-                Uri u = Uri.parse("http://" + s);
-                Intent i = new Intent(Intent.ACTION_VIEW, u);
-                startActivity(i);
+                Intent doc=new Intent(getActivity(),Doctor.class);
+                startActivity(doc);
+                requireActivity().overridePendingTransition(0,0);
             }
         });
-        b3 = v.findViewById(R.id.b_blog);
-        b3.setOnClickListener(new View.OnClickListener() {
+        bblog = v.findViewById(R.id.b_blog);
+        bblog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                b2.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        String s = "http://premediccare.rf.gd/doctors-user.php";
-                        Uri u = Uri.parse("http://" + s);
-                        Intent i = new Intent(Intent.ACTION_VIEW, u);
-                        startActivity(i);
-                    }
-                });
+                Intent i = new Intent(getActivity(), Blog.class);
+                startActivity(i);
+                requireActivity().overridePendingTransition(0, 0);
             }
         });
 
-        b4 = v.findViewById(R.id.b_about);
-        b4.setOnClickListener(new View.OnClickListener() {
+        baboutus = v.findViewById(R.id.b_about);
+        baboutus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String s = "http://premediccare.rf.gd/about-user.php";
-                Uri u = Uri.parse("http://" + s);
-                Intent i = new Intent(Intent.ACTION_VIEW, u);
-                startActivity(i);
+                Intent about=new Intent(getActivity(),Blog.class);
+                startActivity(about);
+                requireActivity().overridePendingTransition(0,0);
             }
         });
-        b5 = v.findViewById(R.id.b_cont);
-        b5.setOnClickListener(new View.OnClickListener() {
+        bcontact = v.findViewById(R.id.b_cont);
+        bcontact.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String s = "http://premediccare.rf.gd/doctors-user.php";
-                Uri u = Uri.parse("http://" + s);
-                Intent i = new Intent(Intent.ACTION_VIEW, u);
-                startActivity(i);
+                Dialog_Fragment mdialog=new Dialog_Fragment();
+                mdialog.show(requireActivity().getSupportFragmentManager(),"My Fragment");
             }
         });
         return v;
     }
-
-    private FragmentManager getSupportFragmentManager() {
-    }
-
 }
