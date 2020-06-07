@@ -43,6 +43,7 @@ WebView department,blog,doctor,aboutus;
         bblog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 Intent i = new Intent(getActivity(), Blog.class);
                 startActivity(i);
                 requireActivity().overridePendingTransition(0, 0);
@@ -53,7 +54,7 @@ WebView department,blog,doctor,aboutus;
         baboutus.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent about=new Intent(getActivity(),Blog.class);
+                Intent about=new Intent(getActivity(),aboutus.class);
                 startActivity(about);
                 requireActivity().overridePendingTransition(0,0);
             }

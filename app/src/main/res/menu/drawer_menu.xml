@@ -7,32 +7,42 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/home"
-            android:title="@string/home" />
+            android:title="@string/home"
+            android:icon="@drawable/ic_home"/>
         <item
             android:id="@+id/diabetes"
-            android:title="@string/diabetes" />
+            android:title="@string/diabetes"
+            android:icon="@drawable/ic_diabetes"/>
         <item
             android:id="@+id/heart"
-            android:title="@string/heart" />
+            android:title="@string/heart"
+            android:icon="@drawable/ic_heart"/>
         <item
             android:id="@+id/breastcancer"
-            android:title="@string/breast_cancer"/>
+            android:title="@string/breast_cancer"
+            android:icon="@drawable/ic_gender"/>
 
         <item
             android:id="@+id/liverdesease"
-            android:title="@string/liver_disease"/>
+            android:title="@string/liver_disease"
+            android:icon="@drawable/ic_liver"/>
         <item
             android:id="@+id/chronickidney"
-            android:title="@string/chronic_kidney"/>
+            android:title="@string/chronic_kidney"
+            android:icon="@drawable/ic_kidney"/>
+
         <item
             android:id="@+id/malaria"
-            android:title="@string/malaria"/>
+            android:title="@string/malaria"
+            android:icon="@drawable/ic_malaria"/>
         <item
             android:id="@+id/pneumonia"
-            android:title="@string/pneumonia"/>
+            android:title="@string/pneumonia"
+            android:icon="@drawable/ic_lungs"/>
         <item
             android:id="@+id/reinopathy"
-            android:title="@string/diabetic_reinopathy"/>
+            android:title="@string/diabetic_reinopathy"
+            android:icon="@drawable/ic_eye"/>
     </group>
 
 
